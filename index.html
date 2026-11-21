@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hồ sơ cá nhân — Đào Tuệ Nhi</title>
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(160deg, #e0f2fe 0%, var(--bg) 55%, #eef2ff 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 640px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .student-info {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+    }
+
+    .nav-link:hover {
+      background: #f0f9ff;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .nav-title {
+      display: block;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .nav-link:hover .nav-title {
+      color: var(--primary-hover);
+    }
+
+    .nav-desc {
+      display: block;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .arrow {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <span class="badge">Hồ sơ cá nhân</span>
+    <h1>Đào Tuệ Nhi</h1>
+    <p class="student-info">
+      MSSV: <strong>52.01.104.072</strong><br />
+      Email: <strong>daotuenhi23@gmail.com</strong>
+    </p>
+
+    <ul class="nav-list">
+      <li>
+        <!-- Đổi index.html thành tên file chính bên trong thư mục aquarium nếu cần -->
+        <a class="nav-link" href="./aquarium/index.html">
+          <div>
+            <span class="nav-title"> Hồ sơ cá nhân</span>
+            <span class="nav-desc"></span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="./cv.html">
+          <div>
+            <span class="nav-title"> CV cá nhân</span>
+            <span class="nav-desc">Thông tin cá nhân, học vấn, kỹ năng và mục tiêu</span>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      Trang web: <strong>daotuenhi.github.io</strong>
+    </footer>
+  </main>
+</body>
+</html>

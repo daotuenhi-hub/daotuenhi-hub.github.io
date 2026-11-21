@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Cá Nhân — Đào Tuệ Nhi</title>
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --paper: #ffffff;
+      --navy: #0f172a;
+      --accent: #0284c7;
+      --text: #1e293b;
+      --muted: #475569;
+      --line: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .cv-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--paper);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    .cv-header {
+      background: var(--navy);
+      color: #ffffff;
+      padding: 32px;
+    }
+
+    .cv-header h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+      letter-spacing: 0.4px;
+    }
+
+    .role {
+      margin: 0 0 14px;
+      color: #7dd3fc;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      font-size: 14px;
+      color: #e2e8f0;
+    }
+
+    .contact-info a {
+      color: #bae6fd;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .cv-content {
+      padding: 32px;
+    }
+
+    section {
+      margin-bottom: 26px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--navy);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .cv-footer {
+      padding: 20px 32px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      padding: 10px 18px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .btn-back:hover {
+      background: #0369a1;
+    }
+  </style>
+</head>
+<body>
+  <article class="cv-container">
+    <header class="cv-header">
+      <h1>Đào Tuệ Nhi</h1>
+      <p class="role">Sinh viên ngành Công nghệ thông tin — MSSV: 52.01.104.072</p>
+      <div class="contact-info">
+        <span>Email: daotuenhi23@gmail.com</span>
+        <span>Điện thoại: [Số điện thoại]</span>
+        
+        <span>GitHub: <a href="https://github.com/daotuenhi">github.com/daotuenhi</a></span>
+      </div>
+    </header>
+
+    <div class="cv-content">
+      <section>
+        <h2>Mục tiêu nghề nghiệp</h2>
+        <p>Với nền tảng kiến thức chuyên ngành Công nghệ Thông tin và kỹ năng sư phạm, tôi mong muốn ứng tuyển vị trí Giáo viên Tin học để truyền đạt tư duy lập trình và kỹ năng số một cách trực quan, sinh động cho học sinh. Mục tiêu ngắn hạn là xây dựng các bài giảng ứng dụng cao, giúp học sinh yêu thích môn học; về dài hạn, tôi hướng tới việc phát triển các chương trình STEM/Tin học hiện đại, góp phần nâng cao năng lực công nghệ cho thế hệ trẻ.</p>
+      </section>
+
+      <section>
+        <h2>Học vấn</h2>
+        <p><strong>Đại học Sư phạm TP.HCM - HCMUE</strong> — Ngành Công nghệ thông tin </p>
+        
+      </section>
+
+      <section>
+        <h2>Kỹ năng</h2>
+        <ul>
+          <li><strong>Web & Lập trình:</strong> [HTML5, CSS3, C++, ...]</li>
+          <li><strong>Công cụ:</strong> [VS Code, Git, GitHub, ...]</li>
+          <li><strong>Kỹ năng khác:</strong> [Làm việc nhóm, tự học, thuyết trình, ...]</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sở thích & Hoạt động</h2>
+        <p>Giải đố tư duy & Trò chơi trí tuệ (Cờ vua, Sudoku, Giải thuật): Giúp rèn luyện sự tập trung, tư duy logic và tính kiên nhẫn.
+
+</p>
+      </section>
+    </div>
+
+    <div class="cv-footer">
+      <a class="btn-back" href="./index.html">← Quay về trang chủ</a>
+    </div>
+  </article>
+</body>
+</html>
